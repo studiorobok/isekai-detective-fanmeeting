@@ -380,3 +380,20 @@ a {
   margin-bottom: 20px;
   text-align: left;
 }
+
+.epilogue-check-section {
+  margin: 0 0 40px;
+}
+
+.epilogue-check-section h3 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.epilogue-check-section p {
+  margin-top: 14px;
+  font-weight: 800;
+}
