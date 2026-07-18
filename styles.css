@@ -1,8 +1,12 @@
 :root {
   color-scheme: dark;
-  --bg: #050101;
-  --text: #ffffff;
-  --line: rgba(255, 255, 255, 0.92);
+  --bg: #101116;
+  --panel: #191b24;
+  --panel-strong: #222532;
+  --text: #f6f1e8;
+  --muted: #b7ad9f;
+  --accent: #d9b46c;
+  --line: rgba(255, 255, 255, 0.13);
 }
 
 * {
@@ -23,19 +27,16 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(217, 180, 108, 0.16), transparent 34rem),
+    linear-gradient(180deg, #151720 0%, #0e0f14 100%);
   color: var(--text);
-  background: var(--bg);
 }
 
 body.home-page {
   background:
-    linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.02) 0%,
-      rgba(0, 0, 0, 0.22) 56%,
-      rgba(0, 0, 0, 0.72) 100%
-    ),
-    url("./assets/images/main-bg.jpg?v=10") center / cover no-repeat,
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.24) 56%, rgba(0, 0, 0, 0.72) 100%),
+    url("./assets/images/main-bg.jpg") center / cover no-repeat,
     #050101;
 }
 
@@ -60,7 +61,7 @@ a {
   width: min(100%, 520px);
   min-height: 100svh;
   margin: 0 auto;
-  padding: 64px 30px 34px;
+  padding: 64px 24px 58px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -68,37 +69,42 @@ a {
 
 .menu {
   display: grid;
-  gap: 22px;
-  transform: translateY(24px);
+  gap: 26px;
 }
 
 .menu-button {
-  min-height: 66px;
-  padding: 10px 14px 13px;
-  border: 2px solid var(--line);
+  min-height: 82px;
+  padding: 15px 18px 18px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.66);
+  background: var(--panel);
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.45);
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family:
     "Nanum Myeongjo",
     "Batang",
     "Gungsuh",
     serif;
-  font-size: clamp(22px, 5.7vw, 34px);
+  font-size: clamp(28px, 7vw, 42px);
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
 .menu-button:active {
   transform: translateY(1px);
 }
 
+.menu-button:not(.is-disabled) {
+  background: rgba(0, 0, 0, 0.64);
+}
+
 .menu-button.is-disabled {
+  background: rgba(0, 0, 0, 0.64);
+  color: rgba(255, 255, 255, 0.96);
   cursor: default;
 }
 
@@ -108,7 +114,7 @@ a {
   z-index: 10;
   height: 56px;
   padding: 0 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  border-bottom: 1px solid var(--line);
   display: grid;
   grid-template-columns: 42px 1fr 42px;
   align-items: center;
@@ -122,7 +128,7 @@ a {
   border-radius: 999px;
   display: grid;
   place-items: center;
-  color: #ffffff;
+  color: var(--accent);
   font-size: 25px;
   line-height: 1;
 }
@@ -144,4 +150,96 @@ a {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.ending-page {
+  background:
+    linear-gradient(180deg, rgba(11, 12, 16, 0.86), rgba(5, 5, 6, 1)),
+    #070708;
+}
+
+.ending-shell {
+  width: min(100%, 720px);
+  margin: 0 auto;
+  padding: 28px 18px 48px;
+}
+
+.ending-panel {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 24px 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+    rgba(12, 12, 14, 0.92);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.34);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.ending-panel h2 {
+  margin: 0 0 22px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.ending-panel p {
+  margin: 0 0 16px;
+  color: rgba(246, 241, 232, 0.92);
+  font-size: 17px;
+  line-height: 1.72;
+  word-break: keep-all;
+}
+
+.ending-panel .warning {
+  margin-top: 20px;
+  color: #ffd98c;
+  font-weight: 800;
+}
+
+.ending-list,
+.answer-list {
+  margin: 0 0 18px;
+  padding-left: 20px;
+  color: rgba(246, 241, 232, 0.9);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.ending-list li,
+.answer-list li {
+  margin: 0 0 10px;
+}
+
+.ending-action {
+  min-height: 58px;
+  margin-top: 24px;
+  padding: 14px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.62);
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.ending-action.secondary {
+  margin-top: 14px;
+  border-color: rgba(255, 255, 255, 0.58);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.ending-actions {
+  display: grid;
 }
