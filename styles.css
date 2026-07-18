@@ -35,7 +35,7 @@ body.home-page {
       rgba(0, 0, 0, 0.22) 56%,
       rgba(0, 0, 0, 0.72) 100%
     ),
-    url("./assets/images/main-bg.jpg") center / cover no-repeat,
+    url("./assets/images/main-bg.jpg?v=10") center / cover no-repeat,
     #050101;
 }
 
