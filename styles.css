@@ -354,3 +354,23 @@ a {
   text-align: center;
   font-weight: 800;
 }
+
+.timeline {
+  margin-top: 38px;
+}
+
+.timeline-block {
+  margin: 0 0 36px;
+}
+
+.timeline-block h3 {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.timeline-block p {
+  margin-bottom: 20px;
+  text-align: left;
+}
