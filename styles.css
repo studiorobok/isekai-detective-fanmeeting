@@ -197,6 +197,15 @@ a {
   word-break: keep-all;
 }
 
+.ending-panel-centered {
+  text-align: center;
+}
+
+.ending-panel-centered .eyebrow {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ending-panel .warning {
   margin-top: 20px;
   color: #ffd98c;
