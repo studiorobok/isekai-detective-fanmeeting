@@ -304,3 +304,53 @@ a {
   font-size: 16px;
   line-height: 1.62;
 }
+
+.story-panel {
+  text-align: left;
+}
+
+.condition-block {
+  margin: 0 0 28px;
+}
+
+.condition-block h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.condition-block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(246, 241, 232, 0.92);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.condition-block li {
+  margin: 0 0 8px;
+}
+
+.story-text p {
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.story-text .quote {
+  margin: 34px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+}
+
+.true-ending {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.true-ending p {
+  margin-bottom: 22px;
+  text-align: center;
+  font-weight: 800;
+}
