@@ -206,6 +206,10 @@ a {
   margin-right: auto;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .ending-panel .warning {
   margin-top: 20px;
   color: #ffd98c;
