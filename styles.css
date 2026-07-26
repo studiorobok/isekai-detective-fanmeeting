@@ -61,21 +61,23 @@ a {
   width: min(100%, 500px);
   min-height: 100svh;
   margin: 0 auto;
-  padding: 64px 34px 46px;
+  padding: 64px 24px 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
 .menu {
+  width: min(100%, 330px);
+  margin: 0 auto;
   display: grid;
-  gap: 22px;
+  gap: 18px;
 }
 
 .menu-button {
-  min-height: 62px;
-  padding: 10px 14px 12px;
-  border: 1.5px solid rgba(246, 241, 232, 0.42);
+  min-height: 46px;
+  padding: 7px 12px 9px;
+  border: 1px solid rgba(246, 241, 232, 0.42);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -89,9 +91,9 @@ a {
     "Batang",
     "Gungsuh",
     serif;
-  font-size: clamp(22px, 5.8vw, 34px);
+  font-size: clamp(18px, 4.4vw, 27px);
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.18;
 }
 
 .menu-button:active {
