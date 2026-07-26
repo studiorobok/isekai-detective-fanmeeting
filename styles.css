@@ -75,14 +75,14 @@ a {
 .menu-button {
   min-height: 62px;
   padding: 10px 14px 12px;
-  border: 1.5px solid rgba(255, 255, 255, 0.64);
+  border: 1.5px solid rgba(246, 241, 232, 0.42);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.44);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.34);
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(246, 241, 232, 0.82);
   text-align: center;
   font-family:
     "Nanum Myeongjo",
@@ -104,7 +104,7 @@ a {
 
 .menu-button.is-disabled {
   background: rgba(0, 0, 0, 0.44);
-  color: rgba(255, 255, 255, 0.84);
+  color: rgba(246, 241, 232, 0.74);
   cursor: default;
 }
 
