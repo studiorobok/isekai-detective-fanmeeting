@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "ChosunIlboMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
   --bg: #101116;
@@ -155,6 +162,10 @@ a {
 }
 
 .ending-page {
+  font-family:
+    "ChosunIlboMyungjo",
+    "Batang",
+    serif;
   background:
     linear-gradient(180deg, rgba(11, 12, 16, 0.86), rgba(5, 5, 6, 1)),
     #070708;
