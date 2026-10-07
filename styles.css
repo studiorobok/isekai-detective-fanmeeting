@@ -335,6 +335,13 @@ a {
   line-height: 1.62;
 }
 
+.note-hanging {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  align-items: start;
+}
+
 .story-panel {
   text-align: left;
 }
