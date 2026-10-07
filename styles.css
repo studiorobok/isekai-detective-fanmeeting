@@ -253,10 +253,11 @@ a {
 }
 
 .ending-action {
-  min-height: 58px;
-  margin-top: 24px;
-  padding: 14px 16px;
-  border: 2px solid rgba(246, 241, 232, 0.42);
+  width: min(100%, 330px);
+  min-height: 46px;
+  margin: 24px auto 0;
+  padding: 7px 12px 9px;
+  border: 1px solid rgba(246, 241, 232, 0.42);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -264,13 +265,13 @@ a {
   background: rgba(0, 0, 0, 0.62);
   color: rgba(246, 241, 232, 0.9);
   text-align: center;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 22px);
   font-weight: 800;
-  line-height: 1.35;
+  line-height: 1.22;
 }
 
 .ending-action.secondary {
-  margin-top: 14px;
+  margin: 14px auto 0;
   border-color: rgba(246, 241, 232, 0.42);
   color: rgba(246, 241, 232, 0.82);
 }
