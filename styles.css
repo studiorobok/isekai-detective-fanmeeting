@@ -243,6 +243,15 @@ a {
   margin: 0 0 10px;
 }
 
+.answer-check-list {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.answer-check-list li {
+  margin-bottom: 26px;
+}
+
 .ending-action {
   min-height: 58px;
   margin-top: 24px;
