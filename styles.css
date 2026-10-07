@@ -287,6 +287,14 @@ a {
   line-height: 1.25;
 }
 
+.ending-result-intro {
+  margin-bottom: 72px;
+}
+
+.ending-result-guide {
+  margin-bottom: 52px;
+}
+
 .check-title {
   margin-top: 24px;
   font-weight: 900;
@@ -317,7 +325,7 @@ a {
 }
 
 .ending-note {
-  margin: 22px 0 4px;
+  margin: 64px 0 4px;
   text-align: left;
 }
 
