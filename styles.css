@@ -202,6 +202,12 @@ a {
   letter-spacing: 0;
 }
 
+.ending-panel h2.long-ending-title {
+  font-size: clamp(23px, 6.1vw, 28px);
+  line-height: 1.28;
+  word-break: keep-all;
+}
+
 .ending-panel p {
   margin: 0 0 16px;
   color: rgba(246, 241, 232, 0.92);
