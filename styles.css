@@ -451,6 +451,11 @@ a {
   text-align: left;
 }
 
+.epilogue-simjingyu-skip-notice {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .epilogue-next-button {
   margin-top: 0;
 }
