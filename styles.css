@@ -209,8 +209,8 @@ a {
 }
 
 .ending-panel h2.single-line-title {
-  font-size: clamp(20px, 5.3vw, 28px);
-  line-height: 1.25;
+  font-size: clamp(23px, 6.1vw, 28px);
+  line-height: 1.28;
   white-space: nowrap;
 }
 
