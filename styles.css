@@ -467,8 +467,8 @@ a {
 }
 
 .epilogue-parkjueun-skip-notice {
-  margin-top: 64px;
-  margin-bottom: 64px;
+  margin: 0;
+  padding: 52px 0;
 }
 
 .epilogue-next-button {
