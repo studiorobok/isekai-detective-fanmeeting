@@ -212,6 +212,12 @@ a {
   white-space: nowrap;
 }
 
+.ending-panel h2.compact-single-line-title {
+  font-size: clamp(17px, 4.6vw, 24px);
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
 .ending-panel p {
   margin: 0 0 16px;
   color: rgba(246, 241, 232, 0.92);
